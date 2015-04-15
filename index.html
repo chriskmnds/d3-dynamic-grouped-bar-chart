@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <link rel="stylesheet" media="screen" href="chart.css">
+        <style>
+	        body {
+			font-family: "Helvetica Neue", Arial, sans-serif;
+		}
+        </style>
+        <title>D3 Dynamic Bar Chart</title>
+    </head>
+    
+    <body>
+	<section>
+		<div id='statChart'></div>
+	</section>
+		
+	<!-- D3 js -->
+    	<script src="http://d3js.org/d3.v3.min.js"></script>
+    	<script src="chart.js"></script>
+	<script>
+		var chart = new Chart(500, 300, "#statChart");
+		
+		var chartData = [ {name: 'Foo', value: [{"a":100}, {"b":150}, {"c":200}]}, 
+				  {name: 'Bar', value: [{"a":200}, {"b":250}, {"c":300}]}, 
+				  {name: 'Baz', value: [{"a":300}, {"b":350}, {"c":400}]} ];	
+		
+		Chart.render(chartData, chart);
+		
+		chartData = [ {name: 'Foo', value: [{"a":100}, {"b":150}, {"c":200}, {"d":250}]}, 
+			      {name: 'Bar', value: [{"a":200}, {"b":250}, {"c":300}, {"d":350}]}, 
+			      {name: 'Baz', value: [{"a":300}, {"b":350}, {"c":400}, {"d":450}]} ];	
+		
+		Chart.render(chartData, chart);
+    	</script>
+    </body>
+</html>
+
