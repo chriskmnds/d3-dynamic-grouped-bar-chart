@@ -42,6 +42,6 @@ will update the chart to the following:
 
 ![alt tag](./imgs/chart2.png)
 
-# License
+## License
 
 MIT
