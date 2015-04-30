@@ -4,7 +4,7 @@
 
 ## Usage
 
-Assuming an element with ID #statChart (see index.html). Executing:
+Include `d3.js`, `chart.js` and `chart.css` in your html file, as in `index.html`. Assuming an element with ID `#statChart` (see `index.html`), executing:
 
 ```js
 // Initialise the graph
